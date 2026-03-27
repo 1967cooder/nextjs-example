@@ -3,18 +3,22 @@
 // export async function GET() {
 //   return NextResponse.json({ message: "Hello world!" });
 // }
-//Diarect API call to supabase using fetch
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseAnnonKey = process.env.SUPABASE_ANNON_KEY;
+//API call to supabase using Rest API
 
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+
+//Direct API call to supabase using fetch
 const response = await fetch(`${supabaseUrl}/rest/v1/products`, {
   headers: {
-    Authorization: `Bearer ${supabaseAnnonKey}`,
-    apikey: supabaseAnnonKey,
+    Authorization: `Bearer ${supabaseAnonKey}`,
+    apikey: supabaseAnonKey,
     "Content-Type": "application/json",
   },
 });
+
 const data = await response.json();
+
 export async function GET() {
   return Response.json(data);
 }
