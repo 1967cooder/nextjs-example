@@ -8,7 +8,7 @@
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 
-//Direct API call to supabase using fetch
+// Direct API call to supabase using fetch
 const response = await fetch(`${supabaseUrl}/rest/v1/products`, {
   headers: {
     Authorization: `Bearer ${supabaseAnonKey}`,
