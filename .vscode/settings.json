@@ -1,0 +1,8 @@
+{
+  "workbench.editorAssociations": [
+    {
+      "viewType": "markdown.preview",
+      "filenamePattern": "**/DATAFLOW.md"
+    }
+  ]
+}
