@@ -4,7 +4,7 @@
 //   return NextResponse.json({ message: "Hello world!" });
 // }
 //API call to supabase using Rest API
-
+//-----------------------------------------------
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 
