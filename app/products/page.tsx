@@ -38,7 +38,9 @@ export default function ProductsPage() {
 
   return (
     <div>
-      <h2>Products</h2>
+      <h2>
+        <strong>Products</strong>
+      </h2>
       <table style={{ borderCollapse: "collapse", width: "100%" }}>
         <thead>
           <tr>

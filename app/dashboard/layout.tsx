@@ -5,7 +5,9 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <h1>Dashboard Layout</h1>
+      <h2>
+        <strong>Dashboard Layout</strong>
+      </h2>
       {children}
     </div>
   );
