@@ -1,24 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Example
+
+## Project Description
+
+This is a demo Next.js application showcasing a modern web app structure using the Next.js App Router. The project demonstrates:
+
+- Ready for deployment on Vercel or other platforms
+
+## Live Demo
+
+The application is deployed and available at: [https://nextjs-example-peach.vercel.app](https://nextjs-example-peach.vercel.app)
+
+## GitHub Repository
+
+Source code and project updates: [https://github.com/1967cooder/nextjs-example](https://github.com/1967cooder/nextjs-example)
+
+- Multi-page navigation (Home, About, Dashboard, Products, Presentations, Demos)
+- Modular file-based routing with layouts and nested routes
+- Example API route for backend logic
+- Integration of custom React components and CSS modules
+- Usage of vectorization and RAG (Retrieval-Augmented Generation) demo pages
+- Ready for deployment on Vercel or other platforms
+
+The application is intended as a template or learning resource for building scalable, production-ready Next.js apps with best practices.
+
+# Next.js Example
+
+This project is built with [Next.js](https://nextjs.org) using [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can edit the main page in `app/page.tsx`. Changes are applied automatically.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load the [Geist](https://vercel.com/font) font.
+
+## Screenshot
+
+![Screenshot of the products page](public/nextjs-example-peach.vercel.app_products.png)
+
+## Check with keep
+
+To verify everything works correctly, run:
+
+```bash
+npx keep
+```
+
+or if you have keep installed globally:
+
+```bash
+keep
+```
+
+This will run an automatic check of the project.
+
+---
 
 ## Learn More
 
@@ -34,3 +83,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+12. Contacts
+
+[Portfolio](https://portfolio-react-silvana.netlify.app/)
