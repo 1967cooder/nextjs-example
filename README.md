@@ -23,6 +23,11 @@ Source code and project updates: [https://github.com/1967cooder/nextjs-example](
 
 The application is intended as a template or learning resource for building scalable, production-ready Next.js apps with best practices.
 
+## Screenshots
+
+Redux Products Page:
+![ Products Page](public/nextjs-example-peach.vercel.app_products.png)
+
 # Next.js Example
 
 This project is built with [Next.js](https://nextjs.org) using [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
@@ -47,9 +52,54 @@ You can edit the main page in `app/page.tsx`. Changes are applied automatically.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load the [Geist](https://vercel.com/font) font.
 
-## Screenshot
+## Features
 
-![Screenshot of the products page](public/nextjs-example-peach.vercel.app_products.png)
+### State Management with Redux
+
+This project includes a **Redux store** implementation using `@reduxjs/toolkit` for centralized state management:
+
+- **Redux Store Configuration**: Core store setup in `lib/store.ts`
+- **Product Slice**: Redux slice for managing products state in `lib/features/products/productsSlice.ts`
+  - `fetchProducts` async thunk for API calls
+  - `productSelected` / `productDeselected` actions for selection
+- **Custom Hooks**: Typed Redux hooks in `lib/hooks.ts` (useAppDispatch, useAppSelector, useAppStore)
+- **StoreProvider**: Client-side wrapper component for Redux Provider integration
+
+#### Products Page (Redux)
+
+- Route: `/products/redux`
+- State lives in the Redux store
+- Uses `fetchProducts` as a `createAsyncThunk`
+- Selection is handled via sync actions
+- Open Redux DevTools to watch actions flow
+
+#### Products Page (Basic)
+
+- Route: `/products/basic`
+- Plain client-side fetch with `useState` and `useEffect`
+- No Redux involved (for comparison)
+
+### API Data Structure
+
+- Products are fetched from Supabase via `/api/products`
+- Current dataset: **23 products** (2 with images, 21 without)
+- Available product images are stored in Supabase Storage
+
+## Screenshots
+
+Products Page:
+![Products Page](public/nextjs-example-peach.vercel.app_products.png)
+
+Redux Products Page:
+![Redux Products Page](public/localhost_3001_products_redux.png)
+
+## Recent Updates (April 24, 2026)
+
+- ✅ Fixed React 19 ref access error in StoreProvider by replacing `useRef` with lazy `useState`
+- ✅ Integrated Redux Toolkit for state management
+- ✅ Created product slice with async thunk for API integration
+- ✅ Implemented Redux DevTools support
+- ✅ Added comparison between Redux and basic state management approaches
 
 ## Check with keep
 
