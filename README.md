@@ -52,6 +52,8 @@ You can edit the main page in `app/page.tsx`. Changes are applied automatically.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load the [Geist](https://vercel.com/font) font.
 
+---
+
 ## Features
 
 ### State Management with Redux
@@ -94,12 +96,6 @@ Redux Products Page:
 ![Redux Products Page](public/localhost_3001_products_redux.png)
 
 ## Recent Updates (April 24, 2026)
-
-- ✅ Fixed React 19 ref access error in StoreProvider by replacing `useRef` with lazy `useState`
-- ✅ Integrated Redux Toolkit for state management
-- ✅ Created product slice with async thunk for API integration
-- ✅ Implemented Redux DevTools support
-- ✅ Added comparison between Redux and basic state management approaches
 
 ## Check with keep
 
