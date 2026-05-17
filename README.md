@@ -42,11 +42,13 @@ npm install
 
 2. Start the development server:
 
+directory:desctop/react-repot/nextjs/next-example
+
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open [http://localhost:3001](http://localhost:3001) in your browser.
 
 You can edit the main page in `app/page.tsx`. Changes are applied automatically.
 
@@ -92,6 +94,8 @@ This project includes a **Redux store** implementation using `@reduxjs/toolkit` 
 Products Page:
 ![Products Page](public/nextjs-example-peach.vercel.app_products.png)
 
+Redux Products Page:
+![ Products Page](public/localhost_3001_products_basic.png)
 Redux Products Page:
 ![Redux Products Page](public/localhost_3001_products_redux.png)
 
